@@ -6,10 +6,7 @@ import com.example.simplebackend.service.BotService;
 import com.example.simplebackend.service.MailSenderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import static com.example.simplebackend.SimpleBackendApplication.botService;
 
@@ -25,5 +22,10 @@ public class OrderController {
         botService.sendMessage(orderModel);
         senderService.sendMessage(orderModel);
         return new ApiResponse("Habar jo`natildi",true);
+    }
+
+    @GetMapping
+    public String isWorking(){
+        return "Hammasi ishlayapti";
     }
 }
