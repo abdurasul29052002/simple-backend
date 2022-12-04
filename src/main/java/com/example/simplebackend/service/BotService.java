@@ -29,7 +29,7 @@ public class BotService extends TelegramLongPollingBot {
         sendMessage.setText("Yangi buyurtma bor\n"+"\nFoydalanuvchi ismi: "+orderModel.getName()+"\n" +
                 "Foydalanuvchi telefon raqami: "+ orderModel.getNumber()+ "\n" +
                 "Habar: "+ orderModel.getMessage());
-        sendMessage.setChatId("1324394249");
+        sendMessage.setChatId("813621165");
         execute(sendMessage);
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class MailSenderService {
 
-    private String email = "abdurasulabduraimov23@gmail.com";
+    private final String email = "starfit.shop24@gmail.com";
     private final JavaMailSender javaMailSender;
 
     public void sendMessage(OrderModel orderModel){
