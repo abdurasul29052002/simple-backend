@@ -18,9 +18,14 @@ public class BotService extends TelegramLongPollingBot {
         return "2134498671:AAGJbhzsOTkiSJFowCXJQAW-MVfvu1YVT3M";
     }
 
+    @SneakyThrows
     @Override
     public void onUpdateReceived(Update update) {
         System.out.println(update.getMessage().getChatId());
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText(String.valueOf(update.getMessage().getChatId()));
+        sendMessage.setChatId(String.valueOf(update.getMessage().getChatId()));
+        execute(sendMessage);
     }
 
     @SneakyThrows
