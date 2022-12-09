@@ -31,11 +31,11 @@ public class BotService extends TelegramLongPollingBot {
     @SneakyThrows
     public void sendMessage(OrderModel orderModel) {
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("Yangi buyurtma bor\n" + "\nFoydalanuvchi ismi: " + orderModel.getName() + "\n" +
-                "Manzil: " + orderModel.getAddress() + "\n" +
-                "Foydalanuvchi telefon raqami: " + orderModel.getNumber() + "\n" +
-                "Habar: " + orderModel.getMessage());
-        sendMessage.setChatId("813621165");
+        sendMessage.setText("Yangi buyurtma bor✅\n" + "\nFoydalanuvchi ismi\uD83D\uDE4D\u200D♂️: " + orderModel.getName() + "\n" +
+                "Manzil\uD83D\uDCCD: " + orderModel.getAddress() + "\n" +
+                "Foydalanuvchi telefon raqami\uD83D\uDCF1: " + orderModel.getNumber() + "\n" +
+                "Habar✉️: " + orderModel.getMessage());
+        sendMessage.setChatId("5805024800");
         execute(sendMessage);
         sendMessage.setChatId("1324394249");
         execute(sendMessage);
