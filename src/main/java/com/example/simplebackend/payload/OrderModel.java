@@ -11,6 +11,8 @@ import lombok.NonNull;
 public class OrderModel {
     private String name;
 
+    private String address;
+
     private String number;
 
     private String message;
