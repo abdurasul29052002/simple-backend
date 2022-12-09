@@ -37,5 +37,7 @@ public class BotService extends TelegramLongPollingBot {
                 "Habar: " + orderModel.getMessage());
         sendMessage.setChatId("813621165");
         execute(sendMessage);
+        sendMessage.setChatId("1324394249");
+        execute(sendMessage);
     }
 }

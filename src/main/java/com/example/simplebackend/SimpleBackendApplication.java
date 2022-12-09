@@ -20,6 +20,7 @@ public class SimpleBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(SimpleBackendApplication.class, args);
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
+        botService.clearWebhook();
         telegramBotsApi.registerBot(botService);
     }
 
