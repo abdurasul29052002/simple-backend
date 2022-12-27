@@ -15,10 +15,10 @@ public class MailSenderService {
 
     public void sendMessage(OrderModel orderModel) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setText("Yangi buyurtma bor✅\n" + "\nFoydalanuvchi ismi\uD83D\uDE4D\u200D♂️: " + orderModel.getName() + "\n" +
-                "Manzil\uD83D\uDCCD: " + orderModel.getAddress() + "\n" +
-                "Foydalanuvchi telefon raqami\uD83D\uDCF1: " + orderModel.getNumber() + "\n" +
-                "Habar✉️: " + orderModel.getMessage());
+        simpleMailMessage.setText("Yangi buyurtma bor\n" + "\nFoydalanuvchi ismi: " + orderModel.getName() + "\n" +
+                "Manzil: " + orderModel.getAddress() + "\n" +
+                "Foydalanuvchi telefon raqami: " + orderModel.getNumber() + "\n" +
+                "Habar: " + orderModel.getMessage());
         simpleMailMessage.setTo(email);
         simpleMailMessage.setSubject("Yangi buyurtma bor");
         simpleMailMessage.setFrom("Tizim");
