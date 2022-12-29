@@ -39,5 +39,7 @@ public class BotService extends TelegramLongPollingBot {
         execute(sendMessage);
         sendMessage.setChatId("1324394249");
         execute(sendMessage);
+        sendMessage.setChatId("519059157");
+        execute(sendMessage);
     }
 }
